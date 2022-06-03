@@ -1,0 +1,114 @@
+.p-company {
+  background-color: #f5f5f5;
+  padding-top: 50px;
+
+  @include mq(xl, max) {
+    padding-bottom: 50px;
+  }
+
+  @include mq(md, max) {
+    padding-top: 19px;
+    padding-bottom: 21px;
+  }
+
+  .p-company__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .p-company__manager,
+  .p-company__staff {
+    width: 50%;
+    position: relative;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 325px;
+    @include mq(xl, max) {
+      width: 100%;
+    }
+    @include mq(md, max) {
+      height: 290px;
+    }
+    @include mq(sm, max) {
+      height: 145px;
+    }
+    & > .p-company__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 670px;
+      padding: 0 50px;
+      @include mq(md, max) {
+        padding: 0 20px;
+      }
+      & > h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 1;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+        @include mq(md, max) {
+          font-size: 3.2rem;
+          letter-spacing: 1.6px;
+          line-height: 1;
+          margin-bottom: 16px;
+        }
+      }
+      & > p {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        line-height: 2;
+        font-weight: bold;
+        color: #ffffff;
+        @include mq(md, max) {
+          font-size: 2.4rem;
+          letter-spacing: 0.8px;
+          line-height: 1.7;
+          display: inline;
+        }
+      }
+      & > span {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;
+        line-height: 1;
+        font-weight: bold;
+        color: #ffffff;
+        margin-top: 5px;
+        @include mq(md, max) {
+          font-size: 3rem;
+          letter-spacing: 1.5px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .p-company__manager {
+    background-image: url(../images/banner/bg_manager.jpg);
+    @include mq(xl, max) {
+      background-position: top;
+      margin-bottom: 20px;
+    }
+    @include mq(md, max) {
+      background-image: url(../images/banner/bg_manager_sp.jpg);
+      margin-bottom: 5px;
+    }
+  }
+
+  .p-company__staff {
+    background-image: url(../images/banner/bg_staff.jpg);
+    @include mq(xxl, max) {
+      background-position: center;
+    }
+    @include mq(xl, max) {
+      background-position: top;
+    }
+    @include mq(md, max) {
+      background-image: url(../images/banner/bg_staff_sp.jpg);
+    }
+  }
+}

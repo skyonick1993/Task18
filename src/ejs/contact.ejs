@@ -1,0 +1,141 @@
+<% const basePath='.' ; const title='Task18 - CONTACT' ; const description='' ;
+const keyword='' ; %>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <%- include('partials/_head', { basePath, title, description, keyword }); %>
+  </head>
+
+  <body>
+    <div class="l-wrapper">
+      <%- include('layout/_header', { basePath }); %>
+
+      <main class="l-main">
+        <section class="p-banner">
+          <div class="p-banner__container">
+            <h2>お問い合わせ</h2>
+          </div>
+        </section>
+        <!-- end banner -->
+
+        <section class="c-form">
+          <div class="c-form__container">
+            <div class="c-form__wrapper">
+              <div class="c-form__heading">
+                <figure class="c-form__logo">
+                  <img
+                    src="./assets/images/intro/intro_logo.png"
+                    alt="intro_logo"
+                  />
+                </figure>
+                <h2>お問い合わせフォーム</h2>
+                <p>
+                  株式会社アイエステーへのお問い合わせ専用フォームです。弊社へのご質問・ご相談などありましたらどうぞお気軽にご連絡ください。後日メールまたはお電話にて返信いたします。
+                </p>
+              </div>
+              <div class="c-form__body">
+                <form action="/action_page.php" method="get">
+                  <div class="c-form__item">
+                    <span>任意</span>
+                    <label for="companyName">法人名</label>
+                    <input
+                      id="companyName"
+                      name="infoForm"
+                      type="text"
+                      placeholder="株式会社アイエステー"
+                    />
+                  </div>
+                  <div class="c-form__item c-form__item--require">
+                    <span>必須</span>
+                    <label for="name">お名前</label>
+                    <input
+                      id="name"
+                      name="infoForm"
+                      type="text"
+                      placeholder="熊本 太郎"
+                    />
+                  </div>
+                  <div class="c-form__item c-form__item--require is-noSpacing">
+                    <span>必須</span>
+                    <label for="email">メールアドレス</label>
+                    <input
+                      id="email"
+                      name="infoForm"
+                      type="email"
+                      placeholder="example@gmail.com"
+                    />
+                  </div>
+                  <div class="c-form__item c-form__item--require">
+                    <span>必須</span>
+                    <label for="phonenumber">電話番号</label>
+                    <input
+                      id="phonenumber"
+                      name="infoForm"
+                      type="text"
+                      placeholder="00-0000-0000"
+                    />
+                  </div>
+                  <div class="c-form__item">
+                    <span>任意</span>
+                    <label for="address">ご住所</label>
+                    <div class="c-form__box">
+                      <div class="c-form__boxWrap">
+                        <span>〒</span>
+                        <input
+                          id="address"
+                          name="infoForm"
+                          type="text"
+                          placeholder="00-0000"
+                        />
+                        <select id="province" name="infoForm">
+                          <option value="都道府県" selected>
+                            --都道府県--
+                          </option>
+                          <option value="都道府県">--都道府--</option>
+                          <option value="都道府県">--都道--</option>
+                          <option value="都道府県">--都--</option>
+                        </select>
+                      </div>
+                      <input
+                        name="infoForm"
+                        type="text"
+                        placeholder="ビル・マンションなど"
+                      />
+                      <input
+                        name="infoForm"
+                        type="text"
+                        placeholder="市町村区番地"
+                      />
+                    </div>
+                  </div>
+                  <div class="c-form__item c-form__item--require">
+                    <span>必須</span>
+                    <label for="survey">お問い合わせ 内容</label>
+                    <textarea
+                      id="survey"
+                      name="infoForm"
+                      placeholder="お問い合わせ内容をご入力ください。"
+                    ></textarea>
+                  </div>
+                  <input type="submit" value="確認する >" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  end form -->
+      </main>
+
+      <a href="#" class="c-scrollTop">
+        <div class="c-scrollTop__btn">
+          <span>^</span>
+          <p>TOP</p>
+        </div>
+        <figure>
+          <img src="./assets/images/totop_logo.png" alt="toTopLogo" />
+        </figure>
+      </a>
+      <%- include('layout/_footer', { basePath }); %>
+    </div>
+  </body>
+</html>

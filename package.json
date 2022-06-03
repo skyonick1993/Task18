@@ -1,0 +1,59 @@
+{
+  "name": "agl_static_site_template",
+  "version": "1.0.0",
+  "description": "AGL's template, HTML ver",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "lint": "gulp lint",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "preversion": "npm test",
+    "version": "npm run changelog && git add -A",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiepagl/task18.git"
+  },
+  "author": "AGL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiepagl/task18/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.4",
+    "conventional-changelog-cli": "^2.2.2",
+    "cross-env": "^7.0.3",
+    "css-declaration-sorter": "^6.1.4",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-beautify": "^3.0.0",
+    "gulp-ejs": "^5.1.0",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-htmlhint": "^4.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.4.6",
+    "rollup": "^2.66.1",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.49.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-order": "^4.1.0"
+  },
+  "homepage": "http://103.77.160.168/~aglstaff/nguyenxuanhiep/task18",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  }
+}

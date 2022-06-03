@@ -1,0 +1,408 @@
+<% const basePath='.' ; const title='Task18 - HOME' ; const description='' ;
+const keyword='' ; %>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <%- include('partials/_head', { basePath, title, description, keyword }); %>
+  </head>
+
+  <body>
+    <div class="l-wrapper">
+      <%- include('layout/_header', { basePath }); %>
+
+      <main class="l-main">
+        <section class="p-slider">
+          <div class="p-slider__container">
+            <div class="p-slider__wrapper">
+              <div class="p-slider__visual1Content">
+                <figure class="p-slider__visual1Logo">
+                  <img
+                    src="./assets/images/slider/logo-mainvisual1.png"
+                    alt="logo-mainvisual1"
+                  />
+                </figure>
+                <div class="p-slider__visual1Info">
+                  <h2>Protect <span>the</span>future</h2>
+                  <p>防災技術を駆使し、地域の未来を守る。</p>
+                </div>
+              </div>
+
+              <div class="p-slider__visual2Content">
+                <h2>Protect</h2>
+                <p>生命と財産を守る</p>
+              </div>
+
+              <div class="p-slider__visual3Content">
+                <h2>Connect</h2>
+                <p>地域と人を繋ぐ</p>
+              </div>
+
+              <div class="p-slider__visual4Content">
+                <h2>Technology</h2>
+                <p>最新技術を生かす</p>
+              </div>
+
+              <div class="p-slider__control">
+                <div class="p-slider__controlItem is-active"></div>
+                <div class="p-slider__controlItem"></div>
+                <div class="p-slider__controlItem"></div>
+                <div class="p-slider__controlItem"></div>
+              </div>
+
+              <div class="p-slider__post">
+                <div class="p-slider__postWrap">
+                  <div class="p-slider__postControl">
+                    <div class="p-slider__postItem" id="prevPost">&lt;</div>
+                    <div class="p-slider__postItem" id="nextPost">&gt;</div>
+                  </div>
+                  <div class="p-slider__postInfo">
+                    <div class="p-slider__postInfoWrap">
+                      <a href="#" class="p-slider__postNews">
+                        <span>2017年09月01日</span>
+                        ドローンレーザスキャナを導入しました
+                      </a>
+                      <a href="#" class="p-slider__postNews">
+                        <span>2018年07月04日</span>
+                        綿田地区の復興を願って寄付をしました。
+                      </a>
+                      <a href="#" class="p-slider__postNews">
+                        <span>2018年11月20日</span>
+                        ホームページをリニューアルしました
+                      </a>
+                      <a href="#" class="p-slider__postNews">
+                        <span>2018年11月22日</span>
+                        先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。
+                      </a>
+                    </div>
+                  </div>
+                  <a href="#newsList" class="p-slider__postInfoList">
+                    <span>お知らせ一覧 ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end slider -->
+
+        <section class="p-intro">
+          <div class="p-intro__container">
+            <div class="p-intro__wrapper">
+              <div class="p-intro__heading">
+                <figure class="p-intro__logo">
+                  <img
+                    src="./assets/images/intro/intro_logo.png"
+                    alt="intro_logo"
+                  />
+                </figure>
+                <h2>事業紹介</h2>
+                <p>
+                  アイエステーは、たゆまない技術向上により、地域防災事業に携わるとともに地域の安全・安心を確保できるインフラ整備に貢献します。
+                </p>
+              </div>
+              <ul class="p-intro__list">
+                <li>
+                  <a href="#">
+                    <div class="p-intro__label p-intro__label--red">
+                      <figure>
+                        <img
+                          src="./assets/images/intro/intro_icon1.png"
+                          alt="intro_icon1"
+                        />
+                      </figure>
+                      <span>防災・減災業務</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="p-intro__label p-intro__label--blue">
+                      <figure>
+                        <img
+                          src="./assets/images/intro/intro_icon2.png"
+                          alt="intro_icon2"
+                        />
+                      </figure>
+                      <span>ICT・BIM/CIM</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="p-intro__label p-intro__label--yellow">
+                      <figure>
+                        <img
+                          src="./assets/images/intro/intro_icon3.png"
+                          alt="intro_icon3"
+                        />
+                      </figure>
+                      <span>測量・設計業務</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="p-intro__label p-intro__label--green">
+                      <figure>
+                        <img
+                          src="./assets/images/intro/intro_icon4.png"
+                          alt="intro_icon4"
+                        />
+                      </figure>
+                      <span>調査業務</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- end intro -->
+
+        <section class="p-forest">
+          <div class="p-forest__container">
+            <div class="p-forest__wrapper">
+              <div class="p-forest__flycam">
+                <figure>
+                  <img src="./assets/images/banner/flycam.png" alt="flycam" />
+                  <img
+                    src="./assets/images/banner/flycam_sp.png"
+                    alt="flycam_sp"
+                  />
+                </figure>
+              </div>
+              <div class="p-forest__content">
+                <h2>
+                  レーザースキャナ搭載のドローン<span>*</span>
+                  で安全かつ効率的に測量が可能。
+                </h2>
+                <p class="p-forest__info">
+                  アイエステーでは、ドローン搭載型の測量用レーザースキャナ搭載のドローンを導入しました。これにより、従来の写真測量で必須だった対空標識を置くことなく、安全かつ効率的に測量することが可能となりました。またレーザーは植生下にも届くため、写真測量では不可能だった植生下のグランドデータを取得できます。災害時の地形測量や施工管理における活躍が期待できます。
+                </p>
+                <p>
+                  <span>＊</span
+                  >アミューズワンセルフ社製：ドローン搭載用レーザースキャナシステム「TDOT（ティードット）」
+                </p>
+              </div>
+              <div class="p-forest__reddot">
+                <figure>
+                  <img src="./assets/images/banner/red-dot.png" alt="reddot" />
+                  <img
+                    src="./assets/images/banner/red-dot_sp.png"
+                    alt="reddot_sp"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <a href="#">詳細情報 ></a>
+        </section>
+        <!-- end forest -->
+
+        <section class="p-reality">
+          <div class="p-reality__container">
+            <div class="p-reality__wrapper">
+              <div class="p-reality__heading">
+                <figure class="p-reality__logo">
+                  <img
+                    src="./assets/images/intro/intro_logo.png"
+                    alt="intro_logo"
+                  />
+                </figure>
+                <h2>実績紹介</h2>
+                <p>『地域の人たちが安全に安心して暮らせるように、</p>
+                <p>
+                  そして豊かに快適に暮らせるように』、そんな想いを込めて仕事をしています。
+                </p>
+              </div>
+              <div class="p-reality__body">
+                <div class="p-reality__bodyWrap">
+                  <ul class="p-reality__list">
+                    <li>
+                      <a href="#">
+                        <div class="p-reality__item">
+                          <figure>
+                            <img
+                              src="./assets/images/reality/reality-item1.jpg"
+                              alt="reality-item1"
+                            />
+                            <figcaption>ICT・BIM/CIM</figcaption>
+                          </figure>
+                          <div class="p-reality__content">
+                            <p>No title</p>
+                          </div>
+                          <span>></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="p-reality__item">
+                          <figure>
+                            <img
+                              src="./assets/images/reality/reality-item2.jpg"
+                              alt="reality-item2"
+                            />
+                            <figcaption>防災・減災業務</figcaption>
+                          </figure>
+                          <div class="p-reality__content">
+                            <p>十籠地すべり対策事業</p>
+                          </div>
+                          <span>></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="p-reality__item">
+                          <figure>
+                            <img
+                              src="./assets/images/reality/reality-item3.jpg"
+                              alt="reality-item3"
+                            />
+                            <figcaption>防災・減災業務</figcaption>
+                          </figure>
+                          <div class="p-reality__content">
+                            <p>水ヶ浦地区災害関連緊急地すべり対策事業</p>
+                          </div>
+                          <span>></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="p-reality__item">
+                          <figure>
+                            <img
+                              src="./assets/images/reality/reality-item4.jpg"
+                              alt="reality-item4"
+                            />
+                            <figcaption>防災・減災業務</figcaption>
+                          </figure>
+                          <div class="p-reality__content">
+                            <p>大切畑地区災害関連緊急地すべり対策事業</p>
+                          </div>
+                          <span>></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-reality__btnLeft">
+                  <figure>
+                    <img
+                      src="./assets/images/reality/arrow-left.png"
+                      alt="arrow-left"
+                    />
+                  </figure>
+                </div>
+                <div class="p-reality__btnRight">
+                  <figure>
+                    <img
+                      src="./assets/images/reality/arrow-right.png"
+                      alt="arrow-right"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#">実績紹介一覧 ></a>
+        </section>
+        <!-- end reality -->
+
+        <section class="p-company">
+          <div class="p-company__container">
+            <div class="p-company__wrapper">
+              <div class="p-company__manager">
+                <div class="p-company__content">
+                  <h2>会社案内</h2>
+                  <p>これまでの防災技術と新分野のICTなどを拡充し、</p>
+                  <p>地元地域に密着した総合建設コンサルタントを目指します。</p>
+                  <span>></span>
+                </div>
+              </div>
+              <div class="p-company__staff">
+                <div class="p-company__content">
+                  <h2>採用情報</h2>
+                  <p>私たちと共に専門知識や技術を高めながら</p>
+                  <p>地域の未来を守る人材を募集しています。</p>
+                  <span>></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end company -->
+
+        <section class="p-news" id="newsList">
+          <div class="p-news__container">
+            <div class="p-news__wrapper">
+              <div class="p-news__heading">
+                <figure class="p-news__logo">
+                  <img
+                    src="./assets/images/intro/intro_logo.png"
+                    alt="intro_logo"
+                  />
+                </figure>
+                <h2>お知らせ</h2>
+              </div>
+              <ul class="p-news__list">
+                <li>
+                  <a href="#">
+                    <div class="p-news__date">2018年11月22日</div>
+                    <p>
+                      先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。
+                    </p>
+                    <span>></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="p-news__date">2018年11月20日</div>
+                    <p>ホームページをリニューアルしました</p>
+                    <span>></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="p-news__date">2018年07月04日</div>
+                    <p>綿田地区の復興を願って寄付をしました。</p>
+                    <span>></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="p-news__date">2017年10月12日</div>
+                    <p>福岡支店が移転しました。</p>
+                    <span>></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="p-news__date">2017年09月01日</div>
+                    <p>ドローンレーザスキャナを導入しました</p>
+                    <span>></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#">お知らせ一覧 ></a>
+        </section>
+        <!-- end news -->
+      </main>
+
+      <a href="#" class="c-scrollTop">
+        <div class="c-scrollTop__btn">
+          <span>^</span>
+          <p>TOP</p>
+        </div>
+        <figure>
+          <img src="./assets/images/totop_logo.png" alt="toTopLogo" />
+        </figure>
+      </a>
+      <%- include('layout/_footer', { basePath }); %>
+    </div>
+  </body>
+</html>

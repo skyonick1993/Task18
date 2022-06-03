@@ -1,0 +1,315 @@
+.p-reality {
+  .p-reality__container {
+    padding-top: 50px;
+    background-image: url(../images/reality/bg-reality.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 533px;
+
+    @include mq(xl, max) {
+      height: auto;
+    }
+
+    @include mq(md, max) {
+      padding-top: 39px;
+      background-image: url(../images/reality/bg-reality_sp.jpg);
+      height: 475px;
+    }
+  }
+
+  .p-reality__wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+
+    @include mq(lg, max) {
+      padding: 0 10px;
+    }
+    @include mq(md, max) {
+      padding: 0 20px;
+    }
+  }
+
+  & > a {
+    font-size: 1.8rem;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000;
+    text-align: center;
+    padding: 30px 0;
+    @include mq(md, max) {
+      font-size: 2.8rem;
+      letter-spacing: 1.4px;
+      padding: 20px 0;
+    }
+  }
+
+  .p-reality__heading {
+    text-align: center;
+    margin-bottom: 37px;
+    @include mq(md, max) {
+      margin-bottom: 22px;
+    }
+    & > .p-reality__logo {
+      display: flex;
+      justify-content: center;
+      width: 40px;
+      height: 25px;
+      margin: auto;
+      margin-bottom: -3px;
+      @include mq(md, max) {
+        width: 35px;
+        height: 22px;
+        margin-bottom: 0;
+      }
+    }
+    & > h2 {
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 2;
+      letter-spacing: 2.4px;
+      margin-bottom: 10px;
+      @include mq(md, max) {
+        font-size: 3.6rem;
+        letter-spacing: 1.8px;
+        line-height: 1;
+        margin-top: 10px;
+        margin-bottom: 19px;
+      }
+    }
+    & > p {
+      font-size: 1.4rem;
+      line-height: 2;
+      letter-spacing: 1.4px;
+      @include mq(lg, max) {
+      }
+      @include mq(md, max) {
+        font-size: 2.8rem;
+        letter-spacing: 0.6px;
+        line-height: 1.7;
+        text-align: center;
+      }
+    }
+  }
+
+  .p-reality__list {
+    display: flex;
+    margin: -15px;
+    @include mq(lg, max) {
+      margin: -10px;
+    }
+    @include mq(md, max) {
+      display: flex;
+      margin: 0;
+      width: fit-content;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.5s ease;
+    }
+
+    &.is-next0 {
+      @include mq(md, max) {
+        transform: translateX(0);
+      }
+    }
+
+    &.is-next1 {
+      @include mq(md, max) {
+        transform: translateX(-25%);
+      }
+    }
+
+    &.is-next2 {
+      @include mq(md, max) {
+        transform: translateX(-50%);
+      }
+    }
+
+    &.is-next3 {
+      @include mq(md, max) {
+        transform: translateX(-75%);
+      }
+    }
+
+    & > li {
+      width: 25%;
+      padding: 15px;
+      @include mq(lg, max) {
+        padding: 10px;
+      }
+      @include mq(md, max) {
+        padding: 10px;
+        width: 235px;
+      }
+      & > a {
+        padding-top: 100%;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
+        & > .p-reality__item {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          & > figure {
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            & > img {
+              transition: all 0.3s ease-in-out;
+            }
+
+            & > figcaption {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100px;
+              line-height: 26px;
+              font-size: 1.2rem;
+              letter-spacing: 1.2px;
+              text-align: center;
+              color: #ffffff;
+              background-color: #d05e48;
+
+              @include mq(lg, max) {
+                font-size: 1rem;
+                line-height: 20px;
+                letter-spacing: 1px;
+              }
+
+              @include mq(md, max) {
+                width: 112.5px;
+                line-height: 21px;
+                font-size: 2.4rem;
+                letter-spacing: 1.2px;
+              }
+            }
+          }
+
+          & > .p-reality__content {
+            position: relative;
+            min-height: 100px;
+            padding: 10px 15px;
+
+            @include mq(lg, max) {
+              min-height: 64px;
+              padding: 5px 10px;
+            }
+            @include mq(md, max) {
+              min-height: 80px;
+              padding: 5.5px 15px;
+            }
+
+            & > p {
+              font-size: 1.5rem;
+              letter-spacing: 1px;
+              line-height: 1.7;
+              font-weight: bold;
+              @include mq(lg, max) {
+                font-size: 1.1rem;
+                line-height: 2;
+                letter-spacing: 1.1px;
+              }
+              @include mq(md, max) {
+                font-size: 2.6rem;
+                line-height: 2;
+                letter-spacing: 1.3px;
+              }
+            }
+          }
+
+          & > span {
+            position: absolute;
+            bottom: 15px;
+            right: 10px;
+            font-size: 1.5rem;
+            letter-spacing: 1.5px;
+            line-height: 1;
+            font-weight: bold;
+            @include mq(lg, max) {
+              right: 5px;
+              bottom: 10px;
+              font-size: 1.1rem;
+              letter-spacing: 1.1px;
+            }
+            @include mq(md, max) {
+              right: 15px;
+              bottom: 15px;
+              font-size: 3rem;
+              letter-spacing: 1.5px;
+            }
+          }
+        }
+
+        &:hover > .p-reality__item > figure > img {
+          transform: scale(1.1);
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &:first-child > a > .p-reality__item > figure > figcaption {
+        background-color: #48b7d0;
+      }
+
+      &:nth-child(even) {
+        margin-top: 15px;
+        @include mq(lg, max) {
+          margin-top: 10px;
+        }
+        @include mq(md, max) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .p-reality__body {
+    position: relative;
+    & > .p-reality__bodyWrap {
+      @include mq(md, max) {
+        width: 235px;
+        height: 235px;
+        margin: auto;
+        position: relative;
+        overflow-x: hidden;
+      }
+    }
+    & > .p-reality__btnLeft {
+      display: none;
+      @include mq(md, max) {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        & > figure {
+          display: flex;
+          width: 18px;
+          height: 30px;
+        }
+      }
+    }
+    & > .p-reality__btnRight {
+      display: none;
+      @include mq(md, max) {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        & > figure {
+          display: flex;
+          width: 18px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}

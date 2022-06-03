@@ -1,0 +1,299 @@
+.l-footer {
+  position: relative;
+
+  .l-footer__container {
+    padding: 60px 80px;
+    z-index: 1;
+    @include mq("lg-max", max) {
+      padding: 60px 40px;
+    }
+    @include mq("xxl", max) {
+      padding: 60px 20px;
+    }
+    @include mq("xl", max) {
+      padding: 60px 10px;
+    }
+    @include mq("md", max) {
+      padding-top: 37px;
+      padding-bottom: 36px;
+    }
+  }
+
+  .l-footer__wrapper {
+    position: relative;
+    & > .l-footer__protect {
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      text-shadow: 0px 0px 5px rgba(64, 166, 42, 0.75);
+      max-width: 400px;
+      @include mq(lg, max) {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.75);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+      }
+      @include mq(md, max) {
+        margin-bottom: 22px;
+      }
+      & > h2 {
+        text-align: center;
+        font-size: 5rem;
+        font-family: Lora;
+        color: #ffffff;
+        letter-spacing: 0;
+        line-height: 0.9;
+        max-width: 200px;
+        margin: auto;
+        margin-bottom: 2px;
+        padding-right: 15px;
+        @include mq(lg, max) {
+          color: #40a62a;
+        }
+        @include mq(md, max) {
+          max-width: 140px;
+          font-size: 6rem;
+          letter-spacing: 3px;
+          margin-bottom: 0;
+          padding-right: 0;
+        }
+        & > span {
+          text-align: center;
+          display: inline-block;
+          font-size: 2rem;
+          font-family: Lora;
+          color: #ffffff;
+          letter-spacing: 2px;
+          line-height: 1.5;
+          @include mq(lg, max) {
+            color: #40a62a;
+          }
+          @include mq(md, max) {
+            font-size: 2.4rem;
+            letter-spacing: 1.2px;
+          }
+        }
+      }
+      & > p {
+        text-align: center;
+        font-size: 1.4rem;
+        color: #ffffff;
+        line-height: 1.5;
+        letter-spacing: 2.8px;
+        @include mq(lg, max) {
+          color: #40a62a;
+        }
+        @include mq(md, max) {
+          font-size: 2.4rem;
+          letter-spacing: 2.4px;
+        }
+      }
+    }
+    & > .l-footer__content {
+      text-align: center;
+      max-width: 390px;
+      margin: auto;
+      @include mq(md, max) {
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.75);
+      }
+      & > a > figure {
+        display: flex;
+        justify-content: center;
+        @include mq(md, max) {
+          width: 92px;
+          height: 22px;
+          margin: auto;
+        }
+      }
+      & > h2 {
+        font-size: 1.3rem;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15px 0;
+        letter-spacing: 0.6px;
+        margin-left: 7px;
+        margin-bottom: 10px;
+        @include mq(md, max) {
+          display: block;
+          font-size: 2.4rem;
+          letter-spacing: 1.2px;
+          margin-top: 15px;
+          margin-bottom: 10px;
+        }
+        & > span {
+          font-size: 1.6rem;
+          line-height: 1;
+          font-weight: bold;
+          letter-spacing: 1px;
+          margin-right: 15px;
+          @include mq(md, max) {
+            font-size: 2.4rem;
+            letter-spacing: 1.2px;
+            margin-top: 10px;
+            margin-right: 0;
+          }
+        }
+      }
+      & > .l-footer__address {
+        font-size: 1.3rem;
+        letter-spacing: 1.3px;
+        line-height: 1;
+        @include mq(md, max) {
+          font-size: 2.4rem;
+          letter-spacing: 1.2px;
+        }
+      }
+
+      & > .l-footer__tel {
+        font-size: 2.6rem;
+        font-family: "Yu Mincho";
+        line-height: 1;
+        margin-top: 30px;
+        margin-bottom: 12px;
+        margin-right: 6px;
+        @include mq(md, max) {
+          font-size: 3.2rem;
+          letter-spacing: 1.6px;
+          margin-top: 20px;
+          margin-bottom: 15px;
+          margin-right: 0;
+        }
+        & > span {
+          display: inline-block;
+          font-size: 3.2rem;
+          font-family: "Yu Mincho";
+          line-height: 1;
+          font-weight: bold;
+          //   letter-spacing: 3.2px;
+          @include mq(md, max) {
+            font-size: 3.6rem;
+            letter-spacing: 1.8px;
+          }
+        }
+      }
+
+      & > .l-footer__fax {
+        font-size: 1.6rem;
+        font-family: "Yu Mincho";
+        line-height: 1;
+        letter-spacing: 1.6px;
+        @include mq(md, max) {
+          font-size: 2.4rem;
+          letter-spacing: 1.2px;
+        }
+      }
+
+      & > .l-footer__access {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 9px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        @include mq(md, max) {
+          margin-top: 20px;
+          margin-bottom: 25px;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 230px;
+        }
+        & > a {
+          display: flex;
+          align-items: center;
+          font-size: 1.4rem;
+          font-family: "Kozuka Gothic Pr6N";
+          line-height: 1;
+          letter-spacing: 1.4px;
+          @include mq(md, max) {
+            font-size: 2.2rem;
+            letter-spacing: 1.1px;
+          }
+          & > span {
+            font-size: 2rem;
+            font-family: "Hiragino Kaku Gothic ProN";
+            line-height: 1;
+            font-weight: bold;
+            color: #48b7d0;
+            letter-spacing: 2px;
+            margin-top: -2.5px;
+            margin-left: 3px;
+            @include mq(md, max) {
+              font-size: 2.5rem;
+              margin-left: 7.5px;
+              margin-top: 0;
+              letter-spacing: 0;
+            }
+          }
+        }
+      }
+
+      & > .l-footer__copyright {
+        font-size: 1.2rem;
+        line-height: 1;
+        letter-spacing: 1.2px;
+        @include mq(md, max) {
+          font-size: 2rem;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+
+  .l-footer__bg {
+    height: 525px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    overflow: hidden;
+    @include mq(lg, max) {
+      height: 571px;
+    }
+    @include mq(md, max) {
+      height: 393.5px;
+    }
+    & > .l-footer__left {
+      & > figure {
+        display: flex;
+        height: 100%;
+      }
+    }
+
+    & > .l-footer__right {
+      & > figure {
+        display: flex;
+        height: 100%;
+      }
+    }
+
+    & > .l-footer__center {
+      min-width: 580px;
+      @include mq("lg-max", max) {
+        min-width: 400px;
+      }
+      @include mq("xxl", max) {
+        min-width: 350px;
+      }
+      @include mq("xl", max) {
+        min-width: 250px;
+      }
+      @include mq("lg", max) {
+        min-width: 300px;
+      }
+      @include mq("md", max) {
+        min-width: 300px;
+      }
+      @include mq("sm", max) {
+        min-width: 150px;
+      }
+    }
+  }
+}

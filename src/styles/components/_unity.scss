@@ -1,0 +1,17 @@
+.u-blue {
+  color: #1f53fa;
+  text-decoration: underline;
+}
+.u-text-center {
+  text-align: center;
+}
+.u-d-flex {
+  display: flex;
+  &--align-center {
+    align-items: center;
+  }
+}
+
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  
+}
